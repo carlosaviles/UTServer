@@ -1,6 +1,5 @@
 //
-//  RA7Server.h
-//  Rain Alarm 7
+//  UTServer.h
 //
 //  Created by Carlos on 11.03.15.
 //  Copyright (c) 2015 iOS Developer. All rights reserved.
@@ -8,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CRServer : NSObject
+@interface UTServer : NSObject
 
 @property (nonatomic, strong) NSMutableURLRequest* request;
 

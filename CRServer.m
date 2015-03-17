@@ -1,14 +1,13 @@
 //
-//  RA7Server.m
-//  Rain Alarm 7
+//  UTServer.m
 //
 //  Created by Carlos on 11.03.15.
 //  Copyright (c) 2015 iOS Developer. All rights reserved.
 //
 
-#import "CRServer.h"
+#import "UTServer.h"
 
-@implementation CRServer
+@implementation UTServer
 
 - (NSData *)getURL:(NSString *)url parameters:(NSDictionary *)parameters error:(NSError *__autoreleasing *)error response:(NSURLResponse *__autoreleasing *)response {
     
