@@ -12,8 +12,11 @@
 @property (nonatomic, strong) NSMutableURLRequest* request;
 
 - (NSData*) getURL:(NSString*)url parameters:(NSDictionary*)parameters error:(NSError**)error response:(NSURLResponse**)response;
-- (NSData*) sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse**)response error:(NSError**)error;
 - (NSData*) doPOSTURL:(NSString*)url parameters:(NSString*)parameters error:(NSError**)error response:(NSURLResponse**)response;
+- (NSData*) doPOSTURL:(NSString*)url body:(NSData*)body error:(NSError**)error response:(NSURLResponse**)response;
+- (NSData*) doPUTURL:(NSString*)url body:(NSData*)body error:(NSError**)error response:(NSURLResponse**)response;
+- (NSData*) sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse**)response error:(NSError**)error;
 - (void) initializeRequest:(NSString*)url;
+- (void) initializeRequest:(NSString *)url body:(NSData*)body;
 
 @end
