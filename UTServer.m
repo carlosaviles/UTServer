@@ -65,6 +65,17 @@
     return [self sendSynchronousRequest:_request returningResponse:response error:error];
 }
 
+- (NSData *)doDELETEURL:(NSString *)url error:(NSError *__autoreleasing *)error response:(NSURLResponse *__autoreleasing *)response {
+    
+    [self initializeRequest:url];
+    
+    _request.HTTPMethod = @"DELETE";
+    
+    NSLog(@"DELETE: %@", url);
+
+    return [self sendSynchronousRequest:_request returningResponse:response error:error];
+}
+
 - (NSData *)sendSynchronousRequest:(NSURLRequest *)request returningResponse:(NSURLResponse *__autoreleasing *)response error:(NSError *__autoreleasing *)error {
     return [NSURLConnection sendSynchronousRequest:_request returningResponse:response error:error];
 }

@@ -15,6 +15,7 @@
 - (NSData*) doPOSTURL:(NSString*)url parameters:(NSString*)parameters error:(NSError**)error response:(NSURLResponse**)response;
 - (NSData*) doPOSTURL:(NSString*)url body:(NSData*)body error:(NSError**)error response:(NSURLResponse**)response;
 - (NSData*) doPUTURL:(NSString*)url body:(NSData*)body error:(NSError**)error response:(NSURLResponse**)response;
+- (NSData*) doDELETEURL:(NSString*)url error:(NSError**)error response:(NSURLResponse**)response;
 - (NSData*) sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse**)response error:(NSError**)error;
 - (void) initializeRequest:(NSString*)url;
 - (void) initializeRequest:(NSString *)url body:(NSData*)body;
