@@ -10,6 +10,7 @@
 @interface UTServer : NSObject
 
 @property (nonatomic, strong) NSMutableURLRequest* request;
+@property (nonatomic, assign) NSURLRequestCachePolicy cachePolicy;
 
 - (NSData*) getURL:(NSString*)url parameters:(NSDictionary*)parameters error:(NSError**)error response:(NSURLResponse**)response;
 - (NSData*) doPOSTURL:(NSString*)url parameters:(NSString*)parameters error:(NSError**)error response:(NSURLResponse**)response;

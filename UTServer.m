@@ -83,6 +83,10 @@
 - (void)initializeRequest:(NSString *)url {
     
     _request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    
+    if(_cachePolicy) {
+        _request.cachePolicy = _cachePolicy;
+    }
 }
 
 - (void)initializeRequest:(NSString *)url body:(NSData *)body {
